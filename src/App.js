@@ -5,6 +5,10 @@ import MenuMotorbike from './components/MenuMotorbike';
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import { CardMedia,Modal,Typography,Box } from '@material-ui/core'; 
+import Grid from '@material-ui/core/Grid';
+
+
+import Bike from './img/yamaha.png'
 
 function App() {
 
@@ -22,22 +26,15 @@ function App() {
     setOpen(true)
   }
 
-  function goRight(){
-    if(pos1 == 12){
-      setPos1(12)
-      return
-    }
-    setPos1(pos1 + 1)
+  function checkResp(event){
+    console.log(event)
   }
 
-  function goLeft(){
-    if(pos1 == 0){
-      setPos1(0)
-      return
+  const style = {
+    Button :{
+      margin:5
     }
-   
-    setPos1(pos1 - 1)
-  }
+  };
 
   return (
     <div className="App">
@@ -47,12 +44,23 @@ function App() {
       <GridMoving pos={pos3}/>
 
       </div>
+      <Grid container justifyContent="center">
       <div className='Controller'>
-      <CardMedia/>
-      <Button variant="contained" onClick={goLeft}>left</Button>
-      <Button variant="contained" onClick={goRight}>right</Button>
+      <Grid item sx={12}>
+        <img src={Bike} alt='' />
+      </Grid>
+      <Grid item xs={8} justifyContent="center">
+      <Button style={style.Button} variant="contained" onClick={checkResp} key={1}>1</Button>
+      <Button style={style.Button} variant="contained" onClick={checkResp} key={2}>2</Button>  
+      <Button style={style.Button} variant="contained" onClick={checkResp} key={3}>3</Button>  
+      <Button style={style.Button} variant="contained" onClick={checkResp} key={4}>4</Button>  
+      </Grid>
+      
+      
       </div>
 
+      </Grid>
+      <div>
       <Button variant="contained" onClick={handleOpen}>Change motorbike!!</Button>
       <Modal open={open}  onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -61,13 +69,13 @@ function App() {
           
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Choose your motorbike !!
-          </Typography>
-          
-            
+          </Typography>        
           
           <MenuMotorbike/>
         </Box>
       </Modal>
+      </div>
+      
     </div>
   );
 }
