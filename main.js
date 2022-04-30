@@ -6,7 +6,7 @@ console.log("Program start");
 console.log("Preparing packages");
 var Scraper = require('images-scraper');
 const {writeFile} = require('fs');
-const path = './json/*.json';
+const path = './json/test.json';
 var results = ""	
 var img = "";
 ////////////////////////////Get image from Google API///////////////////////////////////////////////////////////////////////////////
