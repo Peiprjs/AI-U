@@ -26,7 +26,6 @@ let curltime = cmd.runSync(`curl -s "https://api-us.restb.ai/vision/v2/multipred
 await sleep(1000);
 let dl = cmd.runSync(`curl -s -o "${i}.jpg" "${img2.url}"`);
 console.log(dl);
-console.log(curltime);}
-})();
-
+console.log(curltime);})
+}})();
 
