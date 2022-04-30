@@ -3,12 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Background from '../img/background.webp'
 import Bike from '../img/yamaha.png'
-import { styled } from '@material-ui/core/styles';
+
 // this is only one of the grid that have the motorbike
 
-function GridMoving(pos){
-    
-    let positions = Array(12)
+function GridMoving(prop){
+    const n_pos = 12
+    let positions = [0,0,0,0,0,0,0,0,0,0,0,0]
 
     const styles = {
         paperContainer: {
@@ -24,21 +24,23 @@ function GridMoving(pos){
 
     const sx_ = {width: 832, height: 410};
 
-    const getGridItem = positions.map(function(i){
-        if(i==pos){
+    
+    const getGridItem = positions.map(function(e,i){
+        if(i === prop.pos){
             return(
-            <Grid item sx={sx_}>
+            <Grid item sx={sx_} key={i}>
                 <Paper style={styles.paperContainer}>
                 <img src={Bike} alt='' style={styles.ImageContainer}/>
                 </Paper>
             </Grid>
             )
+        }else{
+            return(
+                <Grid item sx={sx_} key={i}>
+                    <Paper style={styles.paperContainer}/>
+                </Grid>
+                )
         }
-        return(
-        <Grid item sx={sx_} >
-            <Paper style={styles.paperContainer}/>
-        </Grid>
-        )
     })
 
 
@@ -46,7 +48,7 @@ function GridMoving(pos){
         // spacing = distance between grid items
     <>
     <Grid container spacing={0} justifyContent="center">
-        {getGridItem}
+    {getGridItem}
     </Grid>
     
     </>
