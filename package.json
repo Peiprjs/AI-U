@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "curl": "^0.1.4",
+    "googleapis": "^39.2.0",
+    "images-scraper": "^6.4.0",
+    "node-cmd": "^5.0.0"
+  }
+}
