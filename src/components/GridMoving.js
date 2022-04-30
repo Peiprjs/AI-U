@@ -2,11 +2,10 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Background from '../img/background.webp'
-import Bike from '../img/yamaha.png'
 
 // this is only one of the grid that have the motorbike
 
-function GridMoving(prop){
+function GridMoving({pos,bike}){
     const n_pos = 12
     let positions = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -26,11 +25,11 @@ function GridMoving(prop){
 
     
     const getGridItem = positions.map(function(e,i){
-        if(i === prop.pos){
+        if(i === pos){
             return(
             <Grid item sx={sx_} key={i}>
                 <Paper style={styles.paperContainer}>
-                <img src={Bike} alt='' style={styles.ImageContainer}/>
+                <img src={bike} alt='' style={styles.ImageContainer}/>
                 </Paper>
             </Grid>
             )
