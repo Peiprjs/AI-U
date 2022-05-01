@@ -22,6 +22,7 @@ import Img5 from './img/5.png'
 import Img6 from './img/6.png'
 import Img7 from './img/7.png'
 import Img8 from './img/8.png'
+import Img9 from './img/9.png'
 
 let q1 = {"words":["TV","Washing Machine","Chair","Desk"],"correct":"TV","img":Img1}
 let q2 = {"words":["Bed","TV","Stuffed animal","Sofa"],"correct":"Sofa","img":Img2}
@@ -33,7 +34,7 @@ let q7 = {"words":["Sofa","TV","Table","Dinnerware"],"correct":"Table","img":Img
 let q8 = {"words":["Sofa","Dishwasher","Computer","Desk"],"correct":"Computer","img":Img8}
 let q9 = {"words":["Stool","Sofa","Blender","Sink"],"correct":"Stool","img":Img9}
 
-const questions = [q1,q2,qa,q3,q4,q5,q6,q7,q8]
+const questions = [q1,q2,q3,q4,q5,q6,q7,q8,q9]
 
 function App() {
 

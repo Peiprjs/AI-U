@@ -12,7 +12,7 @@ function GridMoving({pos,bike}){
     const styles = {
         paperContainer: {
             backgroundImage: `url(${Background})`,
-            width: 150, height: 210,
+            width: "100%", height: "100%",
             
         },
         ImageContainer:{
@@ -27,7 +27,7 @@ function GridMoving({pos,bike}){
     const getGridItem = positions.map(function(e,i){
         if(i === pos){
             return(
-            <Grid item sx={sx_} key={i}>
+            <Grid item xs={1} key={i}>
                 <Paper style={styles.paperContainer}>
                 <img src={bike} alt='' style={styles.ImageContainer}/>
                 </Paper>
@@ -35,7 +35,7 @@ function GridMoving({pos,bike}){
             )
         }else{
             return(
-                <Grid item sx={sx_} key={i}>
+                <Grid item xs={1} key={i}>
                     <Paper style={styles.paperContainer}/>
                 </Grid>
                 )
