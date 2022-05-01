@@ -1,8 +1,8 @@
 const cmd = require('node-cmd');
 console.log("Program start");
-//console.log("Verifying installed packages");
-//cmd.runSync('npm i');
-//console.log("All packages OK");
+console.log("Verifying installed packages");
+cmd.runSync('npm i');
+console.log("All packages OK");
 console.log("Preparing packages");
 const Scraper = require('images-scraper');
 const {writeFile} = require('fs');
