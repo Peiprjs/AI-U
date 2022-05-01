@@ -8,6 +8,12 @@ import Bike2 from '../img/custom.png'
 import Bike3 from '../img/peugeot.png'
 import Bike4 from '../img/suzuki.png'
 import Bike5 from '../img/yamaha.png'
+import Bike6 from '../img/classic2.png'
+import Bike7 from '../img/classic3.png'
+import Bike8 from '../img/custom.png'
+import Bike9 from '../img/maxiscooter.png'
+import Bike10 from '../img/offroad.png'
+import Bike11 from '../img/vespa.png'
 
 
 
@@ -101,6 +107,69 @@ function MenuMotorbike({setbikechild}){
                             Price 10 k€, Power 80KW                            
                         </Grid>
                     </Grid>
+                </MenuItem>
+                <MenuItem onClick={handleClose} data-id={5}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike6} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={6}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike7} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={7}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike8} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={8}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike9} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={9}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike10} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={10}>
+                <Grid container>
+                        <Grid item>
+                        <img src={Bike11} alt='' style={styles.ImageContainer} data-id={4}/>
+                
+                        </Grid>
+                        <Grid item>
+                            Price 10 k€, Power 80KW                            
+                        </Grid>
+                    </Grid>
+                </MenuItem><MenuItem onClick={handleClose} data-id={11}>
+                
                 </MenuItem>
     
       </Menu>

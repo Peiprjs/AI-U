@@ -13,6 +13,15 @@ import Bike2 from './img/custom.png'
 import Bike3 from './img/peugeot.png'
 import Bike4 from './img/suzuki.png'
 import Bike5 from './img/yamaha.png'
+import Bike6 from './img/classic2.png'
+import Bike7 from './img/classic3.png'
+import Bike8 from './img/custom.png'
+import Bike9 from './img/maxiscooter.png'
+import Bike10 from './img/offroad.png'
+import Bike11 from './img/vespa.png'
+
+
+
 
 import Img1 from './img/1.png'
 import Img2 from './img/2.png'
@@ -39,7 +48,7 @@ const questions = [q1,q2,q3,q4,q5,q6,q7,q8,q9]
 function App() {
 
   const right = 1
-  const n_bike = 4
+  const n_bike = 10
   const n_questions = 7
   
   const rand = () => Math.floor(Math.random() * n_bike)
@@ -59,7 +68,7 @@ function App() {
   function setbikechild(bike){
     setBike(bike)
   }
-  const motorbike = [Bike1,Bike2,Bike3,Bike4,Bike5]
+  const motorbike = [Bike1,Bike2,Bike3,Bike4,Bike5,Bike6,Bike7,Bike8,Bike9,Bike10,Bike11]
   const [b2,setb2] = useState(rand())
   const [b3,setb3] = useState(rand())
   const [b4,setb4] = useState(rand())
