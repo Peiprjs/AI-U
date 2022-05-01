@@ -24,15 +24,16 @@ import Img7 from './img/7.png'
 import Img8 from './img/8.png'
 
 let q1 = {"words":["TV","Washing Machine","Chair","Desk"],"correct":"TV","img":Img1}
-let q2 = {"words":["Bed","TV","Pillow","Sofa"],"correct":"Sofa","img":Img2}
-let q3 = {"words":["Picture","Monkey","Chair","Table"],"correct":"Monkey","img":Img3}
-let q4 = {"words":["Oven","Washing Machine","Dishwasher","Sink"],"correct":"Oven","img":Img4}
-let q5 = {"words":["Board","Desk","Mirror","Cupboard"],"correct":"Mirror","img":Img5}
-let q6 = {"words":["Sofa","TV","Table","Dinnerware"],"correct":"Table","img":Img6}
-let q7 = {"words":["Sofa","Dishwasher","Computer","Desk"],"correct":"Computer","img":Img7}
-let q8 = {"words":["Stool","Sofa","Blender","Sink"],"correct":"Stool","img":Img8}
+let q2 = {"words":["Bed","TV","Stuffed animal","Sofa"],"correct":"Sofa","img":Img2}
+let q3 = {"words":["Bird cage","Computer","Sofa","TV"],"correct":"Bird cage","img":Img3}
+let q4 = {"words":["Picture","Monkey","Chair","Table"],"correct":"Monkey","img":Img4}
+let q5 = {"words":["Oven","Washing Machine","Dishwasher","Sink"],"correct":"Oven","img":Img5}
+let q6 = {"words":["Board","Desk","Mirror","Cupboard"],"correct":"Mirror","img":Img6}
+let q7 = {"words":["Sofa","TV","Table","Dinnerware"],"correct":"Table","img":Img7}
+let q8 = {"words":["Sofa","Dishwasher","Computer","Desk"],"correct":"Computer","img":Img8}
+let q9 = {"words":["Stool","Sofa","Blender","Sink"],"correct":"Stool","img":Img9}
 
-const questions = [q1,q2,q3,q4,q5,q6,q7,q8]
+const questions = [q1,q2,qa,q3,q4,q5,q6,q7,q8]
 
 function App() {
 
